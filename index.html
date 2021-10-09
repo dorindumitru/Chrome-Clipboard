@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css"/>
+    <script src="src/app.js" defer></script>
+    <title>Clipboard</title>
+</head>
+<body>
+    <div class="head-info">
+        <h2 class="title">Clipboard</h2>
+    </div>
+    <div class = "input-area">
+        <textarea id = "clip" name="textarea" rows="3" cols="80"></textarea>
+        <div class="buttons">
+            <button id="save-clip">SAVE</button>
+            <button id="clear-clip">CLEAR</button>
+            <button id="delete-all">DELETE ALL</button>
+        </div>
+    </div>
+    <div class="clips-container">
+        <ul id="clips">
+
+        </ul>
+    </div>
+</body>
+</html>

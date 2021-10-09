@@ -1,0 +1,73 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: center;
+    text-align: center;
+}
+
+#save-clip{
+    background-color: greenyellow;
+    width: 100px;
+    height: 40px;
+    border-radius: 14px;
+}
+
+#save-clip:hover {
+    background-color: rgb(127, 194, 26);
+    color: gray;
+}
+
+#clear-clip {
+    background-color: rgb(224, 71, 71);
+    width: 100px;
+    height: 40px;
+    border-radius: 14px;
+}
+
+#clear-clip:hover {
+    background-color: rgb(187, 58, 58);
+    color: gray;
+}
+
+#delete-all {
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 40px;
+    border-radius: 14px;
+}
+
+#delete-all:hover {
+    background-color: rgb(170, 0, 0);
+    color:gray;
+}
+
+button {
+    justify-content: space-between;
+    margin-top: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.delete {
+    color:red;
+    display:none;
+}
+.delete:hover {
+    display: block;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+}
+
