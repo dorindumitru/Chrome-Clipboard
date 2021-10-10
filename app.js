@@ -47,7 +47,6 @@ function render(clips) {
     for(let i = 0; i< copyBtn.length; i++)
     {
         copyBtn[i].addEventListener('click', function(event){
-            let index = i;
             const thisCopyBtn = event.target;
             const parent = thisCopyBtn.closest('p')
             navigator.clipboard.writeText(clips[i])
