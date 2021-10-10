@@ -11,7 +11,6 @@ let clipsFromLocalStorage = JSON.parse( localStorage.getItem("myClips"))
 
 if(clipsFromLocalStorage) {
     myClips = clipsFromLocalStorage
-    console.log(myClips)
     render(myClips)
 }
 
@@ -29,6 +28,9 @@ function render(clips) {
     {
         listItems += `
         <li class="clip_target_wrapper">
+            <div class="copy-btn-wrapper">
+            <button class="copy-btn copy-${i}">COPY</button>
+            </div>
             <div>
                 <p class="cliptarget clip-${i}" id="note">${myClips[i]}</p>
             </div>
@@ -40,7 +42,17 @@ function render(clips) {
         clipsContainer.innerHTML = listItems
         
     }
+    let copyBtn = document.getElementsByClassName("copy-btn")
     let deleteBtn = document.getElementsByClassName("del-btn")
+    for(let i = 0; i< copyBtn.length; i++)
+    {
+        copyBtn[i].addEventListener('click', function(event){
+            let index = i;
+            const thisCopyBtn = event.target;
+            const parent = thisCopyBtn.closest('p')
+            navigator.clipboard.writeText(clips[i])
+        })
+    }
 
     for(let i =0 ; i<= deleteBtn.length-1; i++){
         deleteBtn[i].addEventListener('click', function(event){
