@@ -22,7 +22,7 @@ body {
 }
 
 #clear-clip {
-    background-color: rgb(224, 71, 71);
+    background-color: yellow;
     width: 100px;
     height: 40px;
     border-radius: 14px;
@@ -30,7 +30,7 @@ body {
 }
 
 #clear-clip:hover {
-    background-color: rgb(187, 58, 58);
+    background-color: rgb(199, 199, 0);
     color: gray;
 }
 
