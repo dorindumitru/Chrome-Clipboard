@@ -61,6 +61,9 @@ function render(clips) {
             parent.remove()
             delete clips[index]
             clips.splice(index,1)
+            localStorage.setItem("myClips", JSON.stringify(clips))
+            console.log(clipsFromLocalStorage)
+            render(clips)
         })  
     }
 
