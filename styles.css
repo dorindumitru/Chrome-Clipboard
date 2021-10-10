@@ -14,11 +14,15 @@ body {
     height: 40px;
     border-radius: 14px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
 #save-clip:hover {
     background-color: rgb(127, 194, 26);
     color: gray;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
 }
 
 #clear-clip {
@@ -27,11 +31,17 @@ body {
     height: 40px;
     border-radius: 14px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
 #clear-clip:hover {
     background-color: rgb(199, 199, 0);
     color: gray;
+    transition: all 1s ease;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1)
 }
 
 #delete-all {
@@ -40,11 +50,15 @@ body {
     height: 40px;
     border-radius: 14px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1)
 }
 
 #delete-all:hover {
     background-color: rgb(170, 0, 0);
     color:gray;
+    transition: all 0.5s ease;
+    transform: scale(1.1)
 }
 
 button {
@@ -72,14 +86,26 @@ li {
     border-radius: 14px;
     margin: 2px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1)
+}
+
+.del-btn:hover {
+    background-color: rgb(170, 0, 0);
+    transition: all 1s ease;
+    transform: scale(1.1)
 }
 
 .del_btn_wrapper{
     display: none;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
 .clip_target_wrapper:hover .del_btn_wrapper {
     display: block;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
 .copy-btn {
@@ -89,16 +115,38 @@ li {
     border-radius: 14px;
     margin: 2px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1)
+}
+
+.copy-btn:hover {
+    background-color: rgb(127, 194, 26);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1)
 }
 
 .copy-btn-wrapper {
     display: none;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
 .clip_target_wrapper:hover .copy-btn-wrapper {
     display: block;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
 p {
     font-weight: bold;
+}
+
+.clip_target_wrapper:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out,
+}
+
+.clip_target_wrapper {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1)
 }
