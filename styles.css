@@ -13,6 +13,7 @@ body {
     width: 100px;
     height: 40px;
     border-radius: 14px;
+    font-weight: bold;
 }
 
 #save-clip:hover {
@@ -25,6 +26,7 @@ body {
     width: 100px;
     height: 40px;
     border-radius: 14px;
+    font-weight: bold;
 }
 
 #clear-clip:hover {
@@ -37,6 +39,7 @@ body {
     width: 100px;
     height: 40px;
     border-radius: 14px;
+    font-weight: bold;
 }
 
 #delete-all:hover {
@@ -56,14 +59,6 @@ ul {
     list-style: none;
 }
 
-.delete {
-    color:red;
-    display:none;
-}
-.delete:hover {
-    display: block;
-}
-
 li {
     display: flex;
     align-items: center;
@@ -76,6 +71,7 @@ li {
     border: 1px solid black;
     border-radius: 14px;
     margin: 2px;
+    font-weight: bold;
 }
 
 .del_btn_wrapper{
@@ -92,6 +88,7 @@ li {
     border: 1px solid black;
     border-radius: 14px;
     margin: 2px;
+    font-weight: bold;
 }
 
 .copy-btn-wrapper {
@@ -100,4 +97,8 @@ li {
 
 .clip_target_wrapper:hover .copy-btn-wrapper {
     display: block;
+}
+
+p {
+    font-weight: bold;
 }
