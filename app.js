@@ -46,9 +46,7 @@ function render(clips) {
     let deleteBtn = document.getElementsByClassName("del-btn")
     for(let i = 0; i< copyBtn.length; i++)
     {
-        copyBtn[i].addEventListener('click', function(event){
-            const thisCopyBtn = event.target;
-            const parent = thisCopyBtn.closest('p')
+        copyBtn[i].addEventListener('click', function(){
             navigator.clipboard.writeText(clips[i])
         })
     }
