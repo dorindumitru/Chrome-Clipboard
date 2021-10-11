@@ -6,5 +6,5 @@
         "default_popup": "index.html",
         "default_icon": "icon.png"
     },
-    "permissions": ["clipboardWrite", "clipboardRead"]
+    "permissions": ["clipboardWrite", "clipboardRead", "tabs"]
 }

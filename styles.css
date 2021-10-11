@@ -150,3 +150,20 @@ p {
     transition: all 0.5s ease-in-out;
     transform: scale(1)
 }
+
+#save-tab {
+    background-color: greenyellow;
+    width: 100px;
+    height: 40px;
+    border-radius: 14px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1)
+}
+
+#save-tab:hover {
+    background-color: rgb(127, 194, 26);
+    color:gray;
+    transition: all 0.5s ease;
+    transform: scale(1.1)
+}
