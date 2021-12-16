@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
     <title>Clipboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="head-info">
-        <h2 class="title">Clipboard</h2>
+      <h2 class="title">Clipboard</h2>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="business" value="PWJFEE2DZK5TC" />
+        <input type="hidden" name="no_recurring" value="0" />
+        <input
+          type="hidden"
+          name="item_name"
+          value="Developing free useful apps for the internet."
+        />
+        <input type="hidden" name="currency_code" value="EUR" />
+        <input
+          type="image"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+          border="0"
+          name="submit"
+          title="PayPal - The safer, easier way to pay online!"
+          alt="Donate with PayPal button"
+        />
+        <img
+          alt=""
+          border="0"
+          src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+          width="1"
+          height="1"
+        />
+      </form>
     </div>
-    <div class = "input-area">
-        <textarea id = "clip" name="textarea" rows="3" cols="80"></textarea>
-        <div class="buttons">
-            <button id="save-clip">SAVE</button>
-            <button id="save-tab">SAVE TAB</button>
-            <button id="clear-clip">CLEAR</button>
-            <button id="delete-all">DELETE ALL</button>
-        </div>
+    <div class="input-area">
+      <textarea id="clip" name="textarea" rows="3" cols="80"></textarea>
+      <div class="buttons">
+        <button id="save-clip">SAVE</button>
+        <button id="save-tab">SAVE TAB</button>
+        <button id="clear-clip">CLEAR</button>
+        <button id="delete-all">DELETE ALL</button>
+      </div>
     </div>
     <div class="clips-container">
-        <ul id="clips">
-
-        </ul>
+      <ul id="clips"></ul>
     </div>
-</body>
+  </body>
 </html>
