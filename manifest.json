@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "2.2",
+  "version": "4.0.2",
   "name": "Clipboard",
   "action": {
     "default_popup": "index.html",
