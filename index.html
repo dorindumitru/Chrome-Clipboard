@@ -5,49 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        var widthFraction = 0.4;
+        var heightFraction = 0.7;
+        var maxW = 800;
+        var maxH = 600;
+        var minW = 380;
+        var minH = 320;
+        var w = Math.round(
+          Math.min(maxW, Math.max(minW, screen.availWidth * widthFraction))
+        );
+        var h = Math.round(
+          Math.min(maxH, Math.max(minH, screen.availHeight * heightFraction))
+        );
+        document.documentElement.style.width = w + "px";
+        document.documentElement.style.height = h + "px";
+      })();
+    </script>
     <script src="app.js" defer></script>
     <title>Clipboard</title>
   </head>
   <body>
-    <div class="head-info">
-      <h2 class="title">Clipboard</h2>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="business" value="PWJFEE2DZK5TC" />
-        <input type="hidden" name="no_recurring" value="0" />
-        <input
-          type="hidden"
-          name="item_name"
-          value="Developing free useful apps for the internet."
-        />
-        <input type="hidden" name="currency_code" value="EUR" />
-        <input
-          type="image"
-          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
-          border="0"
-          name="submit"
-          title="PayPal - The safer, easier way to pay online!"
-          alt="Donate with PayPal button"
-        />
-        <img
-          alt=""
-          border="0"
-          src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-          width="1"
-          height="1"
-        />
-      </form>
-    </div>
-    <div class="input-area">
-      <textarea id="clip" name="textarea" rows="3" cols="80"></textarea>
-      <div class="buttons">
-        <button id="save-clip">SAVE</button>
-        <button id="save-tab">SAVE TAB</button>
-        <button id="clear-clip">CLEAR</button>
-        <button id="delete-all">DELETE ALL</button>
+    <div class="app">
+      <header class="head-info">
+        <h2 class="title">Clipboard</h2>
+      </header>
+
+      <div class="input-area">
+        <textarea
+          id="clip"
+          name="textarea"
+          rows="3"
+          placeholder="Paste or type something to save…"
+        ></textarea>
+        <div class="buttons">
+          <button id="save-clip" type="button">Save</button>
+          <button id="save-tab" type="button">Save Tab</button>
+          <button id="clear-clip" type="button">Clear</button>
+          <button id="delete-all" type="button" title="Double-click to delete all">
+            Delete All
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="clips-container">
-      <ul id="clips"></ul>
+
+      <div class="clips-container">
+        <ul id="clips"></ul>
+        <p class="empty-state" id="empty-state" hidden>No clips yet</p>
+      </div>
+
+      <div class="toast" id="toast" aria-live="polite"></div>
     </div>
   </body>
 </html>
