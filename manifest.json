@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "version": "4.0.2",
-  "name": "Clipboard",
+  "name": "Color Clipboard",
   "action": {
     "default_popup": "index.html",
     "default_icon": "icon.png"
